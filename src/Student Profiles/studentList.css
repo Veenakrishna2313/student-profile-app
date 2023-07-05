@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/********************************Student List Styling************************************************/
+.contentLayoutStyle {
+  margin-top: 80px;
+  width: 100%;
+  background-color: white;
+  max-height: 100vh;
+  overflow: auto;
+}
+.contentLayoutStyle::-webkit-scrollbar {
+  background: transparent;
+}
+
+.Container {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  border-bottom: 1px solid rgba(194, 191, 191, 0.5);
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.imageContainer {
+  align-self: flex-start;
+}
+
+.images {
+  align-self: flex-start;
+  width: 7rem;
+  height: 7rem;
+  border: 1px solid rgba(194, 191, 191, 0.5);
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.contentContainer {
+  align-self: flex-start;
+  font-size: small;
+  font-weight: 500;
+}
+
+.contentContainer h4 {
+  font-weight: 900;
+}
+
+.Container div:last-child {
+  margin-left: auto;
+}
+
+.textStyle p {
+  margin: 0px;
+}
+.testPercentages p {
+  margin: 0px;
+}
+/**************************************Plus/minus Icon Styling*************************************************************************************/
+.iconContainer {
+  align-self: flex-start;
+}
+.plus {
+  color: rgba(151, 150, 150, 0.767);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.plus:hover {
+  color: black;
+}
+
+.btn-light {
+  background-color: rgb(214, 211, 211) !important;
+  margin: 0.5rem;
+}
+
+.formContainer {
+  margin: 1rem;
+}
+
+@media screen and (max-width: 540px) {
+  .contentContainer {
+    font-size: 0.7rem;
+    font-weight: 500;
+     word-break: break-all;
+  }
+
+  .contentContainer h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .images {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .testPercentages {
+    margin: 0;
+  }
+  .plus {
+    font-size: medium;
+  }
+}
+/******************************Search Bar Styling************************************************/
+.searchLayoutStyle {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+}
+
+.inputStyle {
+  display: block !important;
+  width: 100%;
+  border-color: rgb(155, 151, 151);
+  border-top-style: hidden !important;
+  border-right-style: hidden !important;
+  border-left-style: hidden !important;
+  outline: none !important;
+}
